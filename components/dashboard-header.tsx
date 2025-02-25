@@ -11,7 +11,7 @@ export function DashboardHeader() {
   <div>
     <h1 className="text-xl font-bold">Impact Careers</h1>
     <h1 className="text-lg font-bold text-[#4ac55e] flex items-center">
-      Make An Impact <sup>™</sup>
+    Create AN impact <sup>™</sup>
     </h1>
   </div>
 </div>
