@@ -13,8 +13,8 @@ export default function Home() {
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">49</div>
-            <p className="text-xs text-muted-foreground">+5% from last week</p>
+            <div className="text-2xl font-bold">53</div>
+            <p className="text-xs text-muted-foreground">+8% from last week</p>
           </CardContent>
         </Card>
         <Card>
@@ -23,8 +23,8 @@ export default function Home() {
             <Briefcase className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">5085</div>
-            <p className="text-xs text-muted-foreground">+11% from last week</p>
+            <div className="text-2xl font-bold">5258</div>
+            <p className="text-xs text-muted-foreground">+15% from last week</p>
           </CardContent>
         </Card>
         <Card>

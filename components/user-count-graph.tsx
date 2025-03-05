@@ -7,7 +7,6 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 import { format } from "date-fns"
 
-// Original user data from database
 const rawData = [
   { date: "2025-02-15", users: 40 },
   { date: "2025-02-16", users: 40 },
@@ -26,9 +25,9 @@ const rawData = [
   { date: "2025-03-01", users: 48 },
   { date: "2025-03-02", users: 49 },
   { date: "2025-03-03", users: 49 },
+  { date: "2025-03-04", users: 53 },
+  { date: "2025-03-05", users: 53 },
 ]
-
-// Function to fill missing dates with 0 users
 const generateDateRangeData = (startDate: Date, endDate: Date) => {
   const result = []
   const map = new Map(rawData.map((item) => [item.date, item.users]))
@@ -44,12 +43,10 @@ const generateDateRangeData = (startDate: Date, endDate: Date) => {
 export function UserCountGraph() {
   const today = new Date()
 
-  // Calculate the date 10 days ago
-  const tenDaysAgo = new Date()
+   const tenDaysAgo = new Date()
   tenDaysAgo.setDate(today.getDate() - 10)
 
-  // Initialize state with 10 days ago for start date and today for end date
-  const [startDate, setStartDate] = useState<Date>(tenDaysAgo)
+   const [startDate, setStartDate] = useState<Date>(tenDaysAgo)
   const [endDate, setEndDate] = useState<Date>(today)
 
   const filteredData = useMemo(() => generateDateRangeData(startDate, endDate), [startDate, endDate])
@@ -67,7 +64,7 @@ export function UserCountGraph() {
               selected={startDate}
               onChange={(date) => setStartDate(date || tenDaysAgo)}
               maxDate={endDate}
-              dateFormat="dd-MMM" // Custom format: 21-Feb
+            dateFormat="dd-MMM" // Custom format: 21-Feb
               className="border rounded p-2 w-full"
             />
           </div>
@@ -78,7 +75,7 @@ export function UserCountGraph() {
               onChange={(date) => setEndDate(date || today)}
               minDate={startDate}
               maxDate={today}
-              dateFormat="dd-MMM" // Custom format: 21-Feb
+            dateFormat="dd-MMM" // Custom format: 21-Feb
               className="border rounded p-2 w-full"
             />
           </div>
@@ -89,7 +86,7 @@ export function UserCountGraph() {
             <XAxis
               dataKey="date"
               tickFormatter={(value: string) =>
-                format(new Date(value), "dd-MMM") // Format XAxis date as 21-Feb
+              format(new Date(value), "dd-MMM") // Format XAxis date as 21-Feb
               }
             />
             <YAxis />
