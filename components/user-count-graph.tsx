@@ -25,9 +25,13 @@ const rawData = [
   { date: "2025-03-01", users: 48 },
   { date: "2025-03-02", users: 49 },
   { date: "2025-03-03", users: 49 },
-  { date: "2025-03-04", users: 53 },
-  { date: "2025-03-05", users: 53 },
+  { date: "2025-03-04", users: 52 },
+  { date: "2025-03-05", users: 57 },
+  { date: "2025-03-05", users: 60 },
+
 ]
+
+
 const generateDateRangeData = (startDate: Date, endDate: Date) => {
   const result = []
   const map = new Map(rawData.map((item) => [item.date, item.users]))
