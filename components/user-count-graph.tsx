@@ -27,7 +27,7 @@ const rawData = [
   { date: "2025-03-03", users: 49 },
   { date: "2025-03-04", users: 52 },
   { date: "2025-03-05", users: 57 },
-  { date: "2025-03-05", users: 60 },
+  { date: "2025-03-06", users: 60 },
 
 ]
 
