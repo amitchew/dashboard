@@ -30,6 +30,8 @@ const rawData = [
   { date: "2025-03-06", users: 60 },
   { date: "2025-03-07", users: 61 },
   { date: "2025-03-08", users: 64 },
+  { date: "2025-03-09", users: 64 },
+
 
 ]
 
