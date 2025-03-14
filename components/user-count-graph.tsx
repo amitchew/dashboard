@@ -43,14 +43,19 @@ const rawData = [
 const generateDateRangeData = (startDate: Date, endDate: Date) => {
   const result = []
   const map = new Map(rawData.map((item) => [item.date, item.users]))
+  let lastAvailableValue = 0
 
   for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
     const formattedDate = d.toISOString().split("T")[0]
-    result.push({ date: formattedDate, users: map.get(formattedDate) ?? 0 })
+    if (map.has(formattedDate)) {
+      lastAvailableValue = map.get(formattedDate)!
+    }
+    result.push({ date: formattedDate, users: lastAvailableValue })
   }
 
   return result
 }
+
 
 export function UserCountGraph() {
   const today = new Date()
