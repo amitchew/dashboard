@@ -38,10 +38,10 @@ const rawData = [
   { date: "2025-03-14", users: 77 },
   { date: "2025-03-15", users: 79 },
   { date: "2025-03-16", users: 79 },
-  { date: "2025-03-17", users: 83 },
-
-
-
+  { date: "2025-03-17", users: 81 },
+  { date: "2025-03-18", users: 82 },
+  { date: "2025-03-19", users: 83 },
+  { date: "2025-03-20", users: 85 },
 ]
 
 const generateDateRangeData = (startDate: Date, endDate: Date) => {
