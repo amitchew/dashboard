@@ -15,37 +15,12 @@ export function DashboardNav() {
       </SidebarMenuItem>
       <SidebarMenuItem>
         <SidebarMenuButton asChild>
-          <Link href="/jobs">
+          <Link href="/analytics-tables">
             <Briefcase className="mr-2 h-4 w-4" />
-            <span>Jobs</span>
-          </Link>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
-      <SidebarMenuItem>
-        <SidebarMenuButton asChild>
-          <Link href="/candidates">
-            <Users className="mr-2 h-4 w-4" />
-            <span>Candidates</span>
-          </Link>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
-      <SidebarMenuItem>
-        <SidebarMenuButton asChild>
-          <Link href="/analytics">
-            <BarChart className="mr-2 h-4 w-4" />
-            <span>Analytics</span>
-          </Link>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
-      <SidebarMenuItem>
-        <SidebarMenuButton asChild>
-          <Link href="/settings">
-            <Settings className="mr-2 h-4 w-4" />
-            <span>Settings</span>
+            <span>Mobile Users</span>
           </Link>
         </SidebarMenuButton>
       </SidebarMenuItem>
     </SidebarMenu>
   )
 }
-
