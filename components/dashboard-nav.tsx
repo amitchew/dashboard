@@ -1,6 +1,10 @@
-import Link from "next/link"
-import { SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
-import { Home, Briefcase, Users, BarChart, Settings } from "lucide-react"
+import Link from "next/link";
+import {
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+} from "@/components/ui/sidebar";
+import { Home, BarChart } from "lucide-react";
 
 export function DashboardNav() {
   return (
@@ -16,11 +20,11 @@ export function DashboardNav() {
       <SidebarMenuItem>
         <SidebarMenuButton asChild>
           <Link href="/analytics-tables">
-            <Briefcase className="mr-2 h-4 w-4" />
+            <BarChart className="mr-2 h-4 w-4" />
             <span>Mobile Users</span>
           </Link>
         </SidebarMenuButton>
       </SidebarMenuItem>
     </SidebarMenu>
-  )
+  );
 }

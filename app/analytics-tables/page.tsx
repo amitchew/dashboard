@@ -1,9 +1,17 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useState } from "react";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   BarChart,
   Bar,
@@ -16,21 +24,22 @@ import {
   Pie,
   Cell,
   Legend,
-} from "recharts"
-import { Smartphone, Activity } from "lucide-react"
+} from "recharts";
+import { Smartphone, Activity } from "lucide-react";
 
 export default function AnalyticsTables() {
-  const [activeTab, setActiveTab] = useState("tables")
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [activeT, setActiveTab] = useState("tables");
 
   const deviceData = [
-    {device:"iPhone 11 Pro Max",	users:8},
-    {device:"iPhone 12"	,users:6},
-    {device:"iPad Pro (11-inch)" ,	users:4},
-    {device:"iPad Air (5th gen)" ,	users:3},
-    {device:"iPhone"	,users:3},
-    {device:"iPhone 11"	,users:3},
-    {device:"iPhone 12 Pro"	,users:2},
-  ]
+    { device: "iPhone 11 Pro Max", users: 8 },
+    { device: "iPhone 12", users: 6 },
+    { device: "iPad Pro (11-inch)", users: 4 },
+    { device: "iPad Air (5th gen)", users: 3 },
+    { device: "iPhone", users: 3 },
+    { device: "iPhone 11", users: 3 },
+    { device: "iPhone 12 Pro", users: 2 },
+  ];
 
   const eventData = [
     { event: "user_engagement", count: 374 },
@@ -40,15 +49,29 @@ export default function AnalyticsTables() {
     { event: "onboarding_step", count: 32 },
     { event: "account_creation_started", count: 28 },
     { event: "app_update", count: 15 },
-  ]
+  ];
 
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884d8", "#82ca9d", "#ffc658"]
+  const COLORS = [
+    "#0088FE",
+    "#00C49F",
+    "#FFBB28",
+    "#FF8042",
+    "#8884d8",
+    "#82ca9d",
+    "#ffc658",
+  ];
 
   return (
     <div className="w-full max-w-[1400px] mx-auto py-6 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Analytics Dashboard</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">
+        Analytics Dashboard
+      </h1>
 
-      <Tabs defaultValue="tables" className="w-full" onValueChange={setActiveTab}>
+      <Tabs
+        defaultValue="tables"
+        className="w-full"
+        onValueChange={setActiveTab}
+      >
         <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-6 sm:mb-8">
           <TabsTrigger value="tables">Tables</TabsTrigger>
           <TabsTrigger value="charts">Charts</TabsTrigger>
@@ -69,21 +92,31 @@ export default function AnalyticsTables() {
                     <TableHeader>
                       <TableRow>
                         <TableHead className="w-[60%]">Device model</TableHead>
-                        <TableHead className="text-right">Active users</TableHead>
+                        <TableHead className="text-right">
+                          Active users
+                        </TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       {deviceData.map((row) => (
-                        <TableRow key={row.device} className="hover:bg-muted/50">
-                          <TableCell className="font-medium">{row.device}</TableCell>
+                        <TableRow
+                          key={row.device}
+                          className="hover:bg-muted/50"
+                        >
+                          <TableCell className="font-medium">
+                            {row.device}
+                          </TableCell>
                           <TableCell className="text-right">
-                            <span className="font-semibold text-blue-600 dark:text-blue-400">{row.users}</span>
+                            <span className="font-semibold text-blue-600 dark:text-blue-400">
+                              {row.users}
+                            </span>
                           </TableCell>
                         </TableRow>
                       ))}
                     </TableBody>
                     <TableCaption>
-                      Total active users: {deviceData.reduce((sum, item) => sum + item.users, 0)}
+                      Total active users:{" "}
+                      {deviceData.reduce((sum, item) => sum + item.users, 0)}
                     </TableCaption>
                   </Table>
                 </div>
@@ -103,20 +136,29 @@ export default function AnalyticsTables() {
                     <TableHeader>
                       <TableRow>
                         <TableHead className="w-[60%]">Event name</TableHead>
-                        <TableHead className="text-right">Event count</TableHead>
+                        <TableHead className="text-right">
+                          Event count
+                        </TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       {eventData.map((row) => (
                         <TableRow key={row.event} className="hover:bg-muted/50">
-                          <TableCell className="font-medium">{row.event}</TableCell>
+                          <TableCell className="font-medium">
+                            {row.event}
+                          </TableCell>
                           <TableCell className="text-right">
-                            <span className="font-semibold text-purple-600 dark:text-purple-400">{row.count}</span>
+                            <span className="font-semibold text-purple-600 dark:text-purple-400">
+                              {row.count}
+                            </span>
                           </TableCell>
                         </TableRow>
                       ))}
                     </TableBody>
-                    <TableCaption>Total events: {eventData.reduce((sum, item) => sum + item.count, 0)}</TableCaption>
+                    <TableCaption>
+                      Total events:{" "}
+                      {eventData.reduce((sum, item) => sum + item.count, 0)}
+                    </TableCaption>
                   </Table>
                 </div>
               </CardContent>
@@ -136,7 +178,10 @@ export default function AnalyticsTables() {
               <CardContent className="pt-6">
                 <div className="h-[250px] sm:h-[300px] lg:h-[350px]">
                   <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={deviceData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    <BarChart
+                      data={deviceData}
+                      margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                    >
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="device" />
                       <YAxis />
@@ -171,15 +216,24 @@ export default function AnalyticsTables() {
                         dataKey="count"
                         nameKey="event"
                         label={({ name, percent }) =>
-                          window.innerWidth > 640 ? `${name}: ${(percent * 100).toFixed(0)}%` : ""
+                          window.innerWidth > 640
+                            ? `${name}: ${(percent * 100).toFixed(0)}%`
+                            : ""
                         }
                       >
                         {eventData.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                          <Cell
+                            key={`cell-${index}`}
+                            fill={COLORS[index % COLORS.length]}
+                          />
                         ))}
                       </Pie>
                       <Tooltip />
-                      <Legend layout={window.innerWidth > 640 ? "horizontal" : "vertical"} />
+                      <Legend
+                        layout={
+                          window.innerWidth > 640 ? "horizontal" : "vertical"
+                        }
+                      />
                     </PieChart>
                   </ResponsiveContainer>
                 </div>
@@ -189,6 +243,5 @@ export default function AnalyticsTables() {
         </TabsContent>
       </Tabs>
     </div>
-  )
+  );
 }
-
