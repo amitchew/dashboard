@@ -23,7 +23,7 @@ export default function Home() {
             <Briefcase className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">7479</div>
+            <div className="text-2xl font-bold">7895</div>
             <p className="text-xs text-muted-foreground">+15% from last week</p>
           </CardContent>
         </Card>
