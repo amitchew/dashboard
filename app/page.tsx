@@ -13,7 +13,7 @@ export default function Home() {
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">105</div>
+            <div className="text-2xl font-bold">147</div>
             <p className="text-xs text-muted-foreground">+18% from last week</p>
           </CardContent>
         </Card>
