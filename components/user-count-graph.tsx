@@ -106,10 +106,33 @@ const rawData = [
   { date: "2025-05-19", users: 195 },
   { date: "2025-05-20", users: 196 },
   { date: "2025-05-21", users: 202 },
-
+  { date: "2025-05-22", users: 202 },
+  { date: "2025-05-23", users: 203 },
+  { date: "2025-05-24", users: 205 },
+  { date: "2025-05-25", users: 205 },
+  { date: "2025-05-26", users: 206 },
+  { date: "2025-05-27", users: 206 },
+  { date: "2025-05-28", users: 207 },
+  { date: "2025-05-29", users: 208 },
+  { date: "2025-05-30", users: 210 },
+  { date: "2025-05-31", users: 213 },
+  { date: "2025-06-01", users: 213 },
+  { date: "2025-06-02", users: 217 },
+  { date: "2025-06-03", users: 218 },
+  { date: "2025-06-04", users: 222 },
+  { date: "2025-06-05", users: 222 },
+  { date: "2025-06-06", users: 225 },
+  { date: "2025-06-07", users: 225 },
+  { date: "2025-06-08", users: 227 },
+  { date: "2025-06-09", users: 227 },
+  { date: "2025-06-10", users: 229 },
+  { date: "2025-06-11", users: 233 },
+  { date: "2025-06-12", users: 235 },
+  { date: "2025-06-13", users: 239 },
+  { date: "2025-06-14", users: 240 },
+  { date: "2025-06-15", users: 244 },
+  { date: "2025-06-16", users: 245 },
 ]
-
-
 
 const generateDateRangeData = (startDate: Date, endDate: Date) => {
   const result = []
