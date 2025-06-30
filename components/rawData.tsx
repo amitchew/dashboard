@@ -123,6 +123,21 @@ const rawData = [
     { date: "2025-06-14", users: 240 },
     { date: "2025-06-15", users: 244 },
     { date: "2025-06-16", users: 245 },
+
+    { date: "2025-06-17", users: 256 },
+    { date: "2025-06-18", users: 264 },
+    { date: "2025-06-19", users: 268 },
+    { date: "2025-06-20", users: 271 },
+    { date: "2025-06-21", users: 272 },
+    { date: "2025-06-22", users: 277 },
+    { date: "2025-06-23", users: 281 },
+    { date: "2025-06-24", users: 284 },
+    { date: "2025-06-25", users: 288 },
+    { date: "2025-06-26", users: 295 },
+    { date: "2025-06-27", users: 299 },
+    { date: "2025-06-28", users: 300 },
+    { date: "2025-06-29", users: 301 },
+    { date: "2025-06-30", users: 301 },
   ]
 
   export default rawData;
