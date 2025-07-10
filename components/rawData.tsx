@@ -138,6 +138,17 @@ const rawData = [
     { date: "2025-06-28", users: 300 },
     { date: "2025-06-29", users: 301 },
     { date: "2025-06-30", users: 301 },
+
+    { date: "2025-07-01", users: 302 },
+    { date: "2025-07-02", users: 307 },
+    { date: "2025-07-03", users: 312 },
+    { date: "2025-07-04", users: 317},
+    { date: "2025-07-05", users: 319 },
+    { date: "2025-07-06", users: 321 },
+    { date: "2025-07-07", users:322 },
+    { date: "2025-07-08", users:328 },
+    { date: "2025-07-09", users:331 },
+    { date: "2025-07-10", users: 333 },
   ]
 
   export default rawData;
