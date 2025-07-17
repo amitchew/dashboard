@@ -33,8 +33,8 @@ export default function Home() {
             <Target className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{""}</div>
-            <p className="text-xs text-muted-foreground">{""}</p>
+            <div className="text-2xl font-bold">--</div>
+            <p className="text-xs text-muted-foreground">Data coming soon</p>
           </CardContent>
         </Card>
         <Card>
@@ -43,13 +43,52 @@ export default function Home() {
             <BarChart className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{""}</div>
-            <p className="text-xs text-muted-foreground">{""}</p>
+            <div className="text-2xl font-bold">--</div>
+            <p className="text-xs text-muted-foreground">Data coming soon</p>
           </CardContent>
         </Card>
       </div>
+
+      {/* Onboarding Progress Card */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-sm font-medium">User Onboarding Progress</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+              <div className="text-2xl font-bold text-red-500">81</div>
+              <p className="text-sm text-muted-foreground">Pending (No steps completed)</p>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-orange-500">88</div>
+              <p className="text-sm text-muted-foreground">Completed General Info</p>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-yellow-500">19</div>
+              <p className="text-sm text-muted-foreground">+ Skills</p>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-blue-500">22</div>
+              <p className="text-sm text-muted-foreground">+ Work History</p>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-purple-500">5</div>
+              <p className="text-sm text-muted-foreground">+ Certification</p>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-teal-500">18</div>
+              <p className="text-sm text-muted-foreground">+ Education</p>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-green-600">118</div>
+              <p className="text-sm text-muted-foreground">Completed All Steps (Ideal Job)</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
       <UserCountGraph />
     </div>
   )
 }
-
