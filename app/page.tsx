@@ -13,7 +13,7 @@ export default function Home() {
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">353</div>
+            <div className="text-2xl font-bold">240</div>
             <p className="text-xs text-muted-foreground">+5% from last week</p>
           </CardContent>
         </Card>
@@ -48,7 +48,6 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
-
       {/* Onboarding Progress Card */}
       <Card>
         <CardHeader>
@@ -57,31 +56,31 @@ export default function Home() {
         <CardContent>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div>
-              <div className="text-2xl font-bold text-red-500">81</div>
+              <div className="text-2xl font-bold text-red-500">62</div>
               <p className="text-sm text-muted-foreground">Pending (No steps completed)</p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-orange-500">88</div>
+              <div className="text-2xl font-bold text-orange-500">64</div>
               <p className="text-sm text-muted-foreground">Completed General Info</p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-yellow-500">19</div>
+              <div className="text-2xl font-bold text-yellow-500">06</div>
               <p className="text-sm text-muted-foreground">+ Skills</p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-blue-500">22</div>
+              <div className="text-2xl font-bold text-blue-500">13</div>
               <p className="text-sm text-muted-foreground">+ Work History</p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-purple-500">5</div>
+              <div className="text-2xl font-bold text-purple-500">02</div>
               <p className="text-sm text-muted-foreground">+ Certification</p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-teal-500">18</div>
+              <div className="text-2xl font-bold text-teal-500">05</div>
               <p className="text-sm text-muted-foreground">+ Education</p>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-600">118</div>
+              <div className="text-2xl font-bold text-green-600">87</div>
               <p className="text-sm text-muted-foreground">Completed All Steps (Ideal Job)</p>
             </div>
           </div>
